@@ -51,6 +51,12 @@
       "url": "https://www.sawmills.ai/blog"
     }
   ],
+  "redirects": [
+  {
+    "source": "/",
+    "destination": "/docs/quickstart"
+  }
+  ],
   "navigation": [
     {
       "group": "home",
