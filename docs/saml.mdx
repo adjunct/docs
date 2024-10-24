@@ -1,0 +1,18 @@
+---
+title: "SAML"
+---
+
+Sawmills.ai offers Enterprise Single Sign-On (SSO) through the SAML protocol, allowing seamless integration with your Identity Provider (IdP). This enables users to sign in effortlessly using their IdP credentials, with their user data automatically synchronized with Sawmills.ai.
+
+Sawmills.ai supports two methods for initiating a Single Sign-On (SSO) flow via the SAML protocol: Service Provider (SP)-initiated and Identity Provider (IdP)-initiated. This guide explains the differences between the two.
+
+**SP-Initiated Flow (Recommended)**
+
+* User Begins Authentication on Sawmills.ai (SP): The user starts the authentication process from Sawmills.ai by providing their email address.
+* Redirection to Identity Provider (IdP): The user is redirected to your SAML Identity Provider to authenticate.  
+Access Granted Upon Successful Authentication: After successful authentication, the user is redirected back to Sawmills.ai and gains access to their account.
+
+**IdP-Initiated Flow**
+
+* User Initiates Authentication on IdP: The user starts the authentication process from the SAML Identity Provider by selecting Sawmills.ai as the application they wish to access.
+* Redirection to Sawmills.ai: The user is redirected to Sawmills.ai and gains access to their account upon arrival.

@@ -1,91 +1,99 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Sawmills",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#554bda",
+    "light": "#6459f4",
+    "dark": "#554bda",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#554bda",
+      "to": "#6459f4"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
+  "background": { "style": "gradient" },
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Sign Up for Beta",
+    "url": "https://www.sawmills.ai/#",
+    "arrow": false
+  },
+  "primaryTab": {
+    "name": "Home"
   },
   "tabs": [
     {
+      "name": "Guides",
+      "url": "docs"
+    },
+    {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "api-reference",
+      "openapi": "/openapi.json"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "About",
+      "icon": "house",
+      "url": "https://www.sawmills.ai/"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://www.sawmills.ai/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+      "group": "home",
+      "pages": ["home/home"]
     },
     {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
+      "group": "Changelog",
+      "pages": ["changelog/changelog"]
     },
     {
-      "group": "API Documentation",
+      "group": "Documentation",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "docs/getting-started",
+        {
+          "group": "Pipelines",
+          "pages": [
+            "docs/pipelines",
+            {
+              "group": "Sources",
+              "pages": ["docs/sources", "docs/source-datadog-logs"]
+            },
+            {
+              "group": "Destinations",
+              "pages": [
+                "docs/destinations",
+                "docs/destinations-datadog",
+                "docs/destinations-aws-s3"
+              ]
+            },
+            "docs/processors"
+          ]
+        },
+        {
+          "group": "Quota Management",
+          "pages": [
+            "docs/quota-management",
+            "docs/create-new-quota",
+            "docs/edit-quota",
+            "docs/delete-quota",
+            "docs/manage-quota"
+          ]
+        }
       ]
     }
-  ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  }
+  ]
 }

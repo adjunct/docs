@@ -1,0 +1,25 @@
+---
+title: "Create new quota"
+---
+
+#### How to Create a Quota Management
+
+To create a quota management, follow these steps:
+
+1. Navigate to the **Quotas** page in your Sawmills account.
+2. Locate and click on the **\+ New Quota** button at the top right corner of the page.
+3. **Enter a Quota Name**: Begin by providing a name for your quota.
+4. **Choose the Type of Telemetry Data**: Select the type of telemetry data you want to set the quota on. Currently, we only support logs. Metrics and tracing are coming soon.
+5. **Set Conditions**: Click on **"Condition"** to choose the conditions that must be met for this quota to apply.  
+The attributes and values are automatically extracted by the system once telemetry data is going through Sawmills collectors.  
+When quota inheritance is defined - conditions from parent quotas are inherited and cannot be removed, but you can add additional conditions to further customize your quota.  
+**Note:** IsEmpty operator is catching both empty strings and when attribute does not exist. If you need to catch only empty string please use the regex operator.
+1. **Set Quota**: Define the maximum allowed amount of data in GB/day for this quota.  
+If the quota you are setting is a parent quota and it has children quotas, you would not be able to allocate less then the sum of the children quotas.  
+If the quota you are setting is a child quota, you would not be able to allocate more then the then the parent quota minus the quotas already allocated the sibling quotas.
+2. **Set Threshold and Actions**:  
+The threshold is defined as a percentage of the daily quota you set. When the threshold is reached, you can choose actions such as:  
+**Drop**: Stop sending any more of the data type to the configured destination.  
+**Alert**: Receive an email notification indicating the threshold was met.  
+You can choose more than one action to be taken when the threshold it reached
+3. Once these steps are completed, your quota management will be set up and ready for use. Don't forget to click **"Save"** to ensure everything is applied correctly.

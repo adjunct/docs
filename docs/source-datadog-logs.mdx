@@ -1,0 +1,20 @@
+---
+title: "Datadog logs"
+description: "Configuration for the Datadog source"
+---
+
+## Supported data types:
+
+>  <Icon icon="book" iconType="solid" size={15}/> **LOGS**
+
+## Configuration
+
+| Name         | Type   | Default                           | Description                                   |
+| ------------ | ------ | --------------------------------- | --------------------------------------------- |
+| Name         | String | Unique identifier within Sawmills |                                               |
+| Address      | String | $\{env:MY\_POD\_IP}                | Address the DataDog source should listens to. |
+| Port         | Int    | 4318                              | Port the DataDog source should listens to     |
+| Read Timeout | int    | 60                                | The read timeout of the HTTP Server           |
+
+
+**Note**: The pod’s IP address is retrieved by defining an environment variable `MY_POD_IP` from the pod’s status field `status.podIP`. You can access this value using `${env:MY_POD_IP}` in your configuration to dynamically reference the pod’s IP at runtime.

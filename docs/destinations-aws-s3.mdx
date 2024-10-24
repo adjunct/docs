@@ -1,0 +1,49 @@
+---
+title: "AWS S3"
+description: Configuration for an AWS S3 object storage destination.
+---
+
+## Supported data types:
+
+> <Icon icon="book" iconType="solid"size={15}/> **LOGS, TRACES, METRICS**
+
+## Configuration
+
+| Name        | Type   | Default                                              | Description                                                        |
+| ----------- | ------ | ---------------------------------------------------- | ------------------------------------------------------------------ |
+| Name        | String | Unique identifier within Sawmills                    |                                                                    |
+| Region      | String | us-east-1                                            | AWS region                                                         |
+| s3\_bucket  | String | S3 bucket name                                       |                                                                    |
+| Role ARN    | String | The Role ARN to be assumed                           |                                                                    |
+| File Prefix | String | Prefix for the S3 key (root directory inside bucket) |                                                                    |
+| Marshaler   | String | otlp\_json                                           | Marshaler used to produce output data, see Marshaler options below |
+
+### Advanced Options
+
+| Name                | Type    | Default                                                                           | Description                                                        |
+| ------------------- | ------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| REST API Endpoint   | string  | Overrides the endpoint used instead of constructing it from region and s3\_bucket |                                                                    |
+| S3 Force Path Style | Boolean | false                                                                             | Set this to true to force the request to use path-style addressing |
+| Use SSL             | Boolean | true                                                                              | set this to true to disable SSL when sending requests              |
+| Compression         | string  | none                                                                              | Should the file be compressed                                      |
+
+
+#### Marshaler
+
+Marshaler determines the format of data sent to AWS S3\.
+
+* **otlp\_json (default)**: the OpenTelemetry Protocol format, represented as json.
+* **otlp\_proto**: the OpenTelemetry Protocol format, represented as Protocol Buffers. A single protobuf message is written into each object.
+* **sumo\_ic**: the Sumo Logic Installed Collector Archive format. This format is supported only for logs.
+body: export the log body as string. This format is supported only for logs.
+
+#### AWS Credential Configuration
+
+Sawmills collector is running on a Kubernetes cluster and is using helm-charts. Please pass `extraEnvs` in the `values.yaml`
+
+```yaml YAML
+name: AWS_ACCESS_KEY_ID
+value: "\< YOUR AWS ACCESS KEY >"
+name: AWS_SECRET_ACCESS_KEY
+value: "\< YOUR AWS SECRET ACCESS KEY >"
+```
