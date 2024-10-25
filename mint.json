@@ -21,6 +21,11 @@
     "url": "https://www.sawmills.ai/#",
     "arrow": false
   },
+  "redirects": [
+  {
+    "source": "/",
+    "destination": "/guides"
+  }],
   "primaryTab": {
     "name": "Guides",
     "url":"docs"
@@ -53,7 +58,6 @@
     }
   ],
   "navigation": [
-
     {
       "group": "Changelog",
       "pages": ["changelog/changelog"]
