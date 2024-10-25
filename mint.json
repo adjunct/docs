@@ -85,12 +85,8 @@
       ]
     },
     {
-      "group":"Administration",
-      "pages":[]
-    },
-     {
-      "group": "Changelog",
-      "pages": ["changelog/changelog"]
+      "group": "Administration",
+      "pages": []
     }
   ]
 }
