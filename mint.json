@@ -83,10 +83,10 @@
           ]
         }
       ]
+    },
+     {
+      "group": "Changelog",
+      "pages": ["changelog/changelog"]
     }
-    //  {
-    //   "group": "Changelog",
-    //   "pages": ["changelog/changelog"]
-    // }
   ]
 }
