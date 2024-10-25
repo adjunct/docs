@@ -24,7 +24,7 @@
   "redirects": [
   {
     "source": "/",
-    "destination": "/docs"
+    "destination": "docs/getting-started"
   }],
   "tabs":[
     {
