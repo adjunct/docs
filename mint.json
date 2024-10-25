@@ -26,10 +26,6 @@
     "source": "/",
     "destination": "docs"
   }],
-  "primaryTab": {
-    "name": "Guides",
-    "url":"docs"
-  },
   "tabs": [
     {
       "name": "Guides",
