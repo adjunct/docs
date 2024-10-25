@@ -53,10 +53,7 @@
     }
   ],
   "navigation": [
-    {
-      "group": "home",
-      "pages": ["home/home"]
-    },
+
     {
       "group": "Changelog",
       "pages": ["changelog/changelog"]
