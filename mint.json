@@ -86,7 +86,7 @@
     },
     {
       "group": "Administration",
-      "pages": ["Administration/user-management"]
+      "pages": ["docs/user-management"]
     }
   ]
 }
