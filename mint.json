@@ -21,11 +21,6 @@
     "url": "https://www.sawmills.ai/#",
     "arrow": false
   },
-  "redirects": [
-  {
-    "source": "/",
-    "destination": "docs/getting-started"
-  }],
   "tabs": [
     {
       "name": "Guides",
