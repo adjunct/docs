@@ -23,7 +23,7 @@
   },
   "tabs": [
     {
-      "name": "Guides",
+      "name": "Documentation",
       "url": "docs"
     },
     {
@@ -83,10 +83,10 @@
           ]
         }
       ]
-    },
-     {
-      "group": "Changelog",
-      "pages": ["changelog/changelog"]
     }
+    //  {
+    //   "group": "Changelog",
+    //   "pages": ["changelog/changelog"]
+    // }
   ]
 }
