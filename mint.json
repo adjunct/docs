@@ -22,7 +22,8 @@
     "arrow": false
   },
   "primaryTab": {
-    "name": "Home"
+    "name": "Home",
+    "url":"docs"
   },
   "tabs": [
     {
@@ -50,12 +51,6 @@
       "icon": "newspaper",
       "url": "https://www.sawmills.ai/blog"
     }
-  ],
-  "redirects": [
-  {
-    "source": "/",
-    "destination": "/docs/quickstart"
-  }
   ],
   "navigation": [
     {
