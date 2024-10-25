@@ -82,9 +82,11 @@
             "docs/manage-quota"
           ]
         }
-      ],
-      "group-a":"Administration",
-      "pages-a":[]
+      ]
+    },
+    {
+      "group":"Administration",
+      "pages":[]
     },
      {
       "group": "Changelog",
