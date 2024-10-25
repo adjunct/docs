@@ -24,12 +24,16 @@
   "redirects": [
   {
     "source": "/",
-    "destination": "docs/getting-started"
+    "destination": "docs"
   }],
-  "tabs":[
+  "primaryTab": {
+    "name": "Guides",
+    "url":"docs/getting-started"
+  },
+  "tabs": [
     {
       "name": "Guides",
-      "url": "/docs"
+      "url": "docs"
     },
     {
       "name": "API Reference",
