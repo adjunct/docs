@@ -28,7 +28,7 @@
   }],
   "primaryTab": {
     "name": "Guides",
-    "url":"docs/getting-started"
+    "url":"docs"
   },
   "tabs": [
     {
