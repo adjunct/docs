@@ -21,11 +21,11 @@
     "url": "https://www.sawmills.ai/#",
     "arrow": false
   },
-  // "redirects": [
-  // {
-  //   "source": "/",
-  //   "destination": "docs"
-  // }],
+  "redirects": [
+  {
+    "source": "/",
+    "destination": "docs"
+  }],
   "primaryTab": {
     "name": "Guides",
     "url":"docs/getting-started"
@@ -47,7 +47,7 @@
   ],
   "anchors": [
     {
-      "name": "About",
+      "name": "Home site",
       "icon": "house",
       "url": "https://www.sawmills.ai/"
     },
@@ -58,10 +58,6 @@
     }
   ],
   "navigation": [
-    {
-      "group": "Changelog",
-      "pages": ["changelog/changelog"]
-    },
     {
       "group": "Documentation",
       "pages": [
@@ -96,6 +92,10 @@
           ]
         }
       ]
+    },
+     {
+      "group": "Changelog",
+      "pages": ["changelog/changelog"]
     }
   ]
 }
